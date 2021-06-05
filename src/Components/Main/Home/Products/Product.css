@@ -1,0 +1,897 @@
+.product{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.product__box{
+    width: 85%;
+    margin: auto;
+    min-height: 1000px;
+    overflow: hidden;
+}
+.product__box-title{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b0b0b0;
+}
+.main__product{
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+.container__product{
+    display: flex;
+    flex-direction: column;
+    width: 23.3%;
+    padding: 10px;
+    border: 1px solid #ffe9e9;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+}
+.container__product:hover > a > .container__img>img{
+    transform: translateY(-10px);
+}
+.container__img{
+    display: flex;
+    justify-content: center;
+}
+.container__product:hover .container__btn>button
+{
+    background-color:#0090ea ;
+    color: white;
+    border: none;
+}
+.container__product:hover .container__btn>a{
+    background-color:#0090ea ;
+    color: white;
+    border: none;
+    height: 39.6px;
+}
+.container__img>img{
+    width: 70%;
+    padding: 8px;
+    transition: .3s;
+}
+.container__title{
+    font-weight: 600;
+    margin: 10px 0px;
+    padding-left: 5%;
+    color: #3f3f3f;
+    min-height: 65px;
+}
+.container__price{
+    font-weight: 600;
+    color: #e20000;
+    margin: 7px 0px;
+    padding-left: 5%;
+}
+.container__oldPrice
+{
+    padding-left: 5%;
+    padding-bottom: 5px;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #686868;
+}
+.container__config{
+    line-height: 26px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    color: #686868;
+    padding-left: 5%;
+    min-height: 130px;
+}
+.overplay__product-home{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1;
+}
+.overplay__product-home>i{
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+.container__comment{
+    margin: 10px 0px;
+    padding-left: 5%;
+    color: #6d6d6d;
+    display: flex;
+}
+.container__comment>div{
+    padding: 5px 7px;
+    font-size: 14px;
+}
+.container__comment>span{
+    font-size: 15px;
+}
+.container__btn{
+    align-self: center;
+    margin: 16px 5px;
+}
+.container__btn>button{
+    width: 134px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #d18b36;
+    background: none;
+    color: #5c5c5c;
+    cursor: pointer;
+    outline: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    transition: .3s;
+    font-size: 13px;
+}
+.container__btn>a{
+    width: 115px;
+    height: 38.3px;
+    border-radius: 8px;
+    border: 1px solid #d18b36;
+    background: none;
+    color: #5c5c5c;
+    cursor: pointer;
+    outline: none;
+    margin-right: 3px;
+    margin-left: 3px;
+    transition: .3s;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 37px;
+}
+.container__btn>button:hover{
+    background: #0090ea;
+    color: white;
+    border: none;
+}
+.container__btn>a:hover{
+    background: #0090ea;
+    color: white;
+    border: none;
+    height: 39.6px;
+}
+
+/*Start Detail___________________________________*/
+.detail{
+    display: flex;
+    position: relative;
+}
+.detail__box
+{
+    width: 80%;
+    margin: auto;
+}
+.detail__title{
+    margin: 25px 0px;
+    font-size: 14px;
+    color: #3d3d3d;
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+/* .detail__product{
+
+}
+.detail__product-boxImage{
+
+} */
+.detail__product-boxImage>img{
+    width: 450px;
+}
+.detail__product-title{
+    font-size: 25px;
+    padding: 28px 0px;
+    padding-top: 5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.detail__product-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+/* .detail__product-image{
+
+}
+.detail__product-image>img{
+
+} */
+.detail__product-description
+{
+    padding-left: 7%;
+}
+.detail__product-price{
+    color: #db0000;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 70px;
+}
+.detail__product-oldPrice
+{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #666;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    margin-right: 15%;
+    border-bottom: 1px solid #cdcdcd;
+}
+.detail__sale
+{
+    width: 79%;
+    padding: 10px 14px;
+    border: 1px solid #c7c7c7;
+    border-radius: 12px;
+    line-height: 30px;
+    color: #4c4c4c;
+}
+.detail__sale>img{
+    width: 18px;
+    height: 20px;
+    padding-right: 10px;
+}
+.detail__product-form
+{
+    padding-top: 4.8%;
+}
+.detail__product-form>button
+{
+    width: 250px;
+    height: 50px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    background-image: none;
+    color: white;
+    /* background-image: linear-gradient(to top, black, transparent); */
+    background: linear-gradient(to top,#f59000,#fd6e1d);
+    outline: none;
+    cursor: pointer;
+}
+.detail__product-boxDescriptions
+{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.detail__product-boxSlider{
+    width: 70%;
+}
+.detail__product-boxSlider>div{
+    padding: 17px 0px;
+    font-size: 21px;
+    position: relative;
+}
+.detail__product-slider:hover .directional
+{
+  display: block;
+}
+.detail__product-slider>div:first-child
+{
+    display: flex;
+    overflow: hidden;
+}
+.detail__product-slider>div>img{
+  width: 100%;
+  transition: .6s;
+}
+.directional
+{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.directional>i:first-child
+{
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.directional>i:last-child
+{
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+.directional>i:hover
+{
+    color: orangered;
+}
+.dots{
+    text-align: center;
+}
+.dots>span{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 6px;
+    transition: .4s;
+    border: 1px solid #f28c31;
+}
+.detail__product-config
+{
+    padding-left: 3%;
+    margin-left: 1%;
+    padding-right: 2%;
+    height: 100%;
+    border-radius: 20px;
+    margin-top: 1%;
+    width: 30%;
+}
+.detail__product-config>div:first-child{
+    font-size: 20px;
+    margin: 20px 0px;
+    color: #00b4ff;
+    margin-top: 7px;
+}
+.detail__product-config>div:last-child>p{
+    display: flex;
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #c5c5c5;
+
+}
+.detail__product-config>div:last-child>p>span:first-child
+{
+    
+    min-width: 144px;
+    min-height: 37px;
+}
+.detail__product-config>div:last-child>p>span:last-child
+{
+    font-size: 14px;
+    color: #6a6a6a;
+}
+/*Detail and news__________________________________________*/
+.box__extension-news
+{
+    display: flex;
+}
+.detail__extension
+{
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+}
+.detail__extension-title
+{
+    font-weight: 700;
+    font-size: 21px;
+    margin: 20px 0px;
+}
+.detail__extension-content
+{
+    font-size: 17px;
+    line-height: 29px;
+    padding-right: 10%;
+    padding-bottom: 17px;
+}
+.detail__extension-image>img{
+    width: 80%;
+}
+.news{
+    width: 30%;
+}
+.news__title{
+    font-weight: 600;
+    font-size: 21px;
+    margin: 20px 0px;
+}
+/* .news__content
+{
+
+} */
+.news__content>a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+.news__content>a>div>img{
+    width: 100px;
+}
+.news__content>a>span
+{
+    font-size: 15px;
+    /* text-indent: 10px; */
+    padding-left: 10px;
+    padding-top: 0px;
+    transform: translateY(-6px);
+    max-height: 65px;
+    overflow: hidden;
+}
+.btn__showComment
+{
+    width: 120px;
+    height: 30px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to top,#f59000,#fd6e1d);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    outline: none;
+}
+/*Comment_________________________________*/
+.comment{
+    width: 50%;
+}
+.dataForUser
+{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.comment__title
+{
+    font-size: 21px;
+    padding: 18px 0px;
+    border-bottom: 1px solid #d1d1d1;
+    margin-right: 46px;
+}
+.comment__content
+{
+    padding: 20px 0px;
+    position: relative;
+}
+.comment__content-user
+{
+    border-bottom: 1px solid #e8e8e8;
+    border: 1px solid #dedede;
+    padding: 15px 10px;
+    background: #fdfdfdd4;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+    transition: .6s linear;
+}
+.buttonForEditComment
+{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0px;
+    margin-bottom: 16px;
+    background: #2a68ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+.inputForEditComment
+{
+    width: 350px;
+    height: 40px;
+    margin: 10px 0px;
+    border: none;
+    background: white;
+    border-bottom: 1px solid black;
+    text-indent: 5px;
+}
+.comment__content-user>label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #838383;
+    cursor: pointer;
+    transition: .5s;
+}
+.comment__content-user>label:hover
+{
+    transform: rotate(260deg);
+    color: black;
+}
+.editContent
+{
+    position: absolute;
+    top: 9px;
+    right: 41px;
+    animation:  fadeForEditComment .3s linear;
+}
+.closeEditComment
+{
+    animation: closeFadeForEditComment .3s linear;
+}
+/* .closeWhenRemoveComment {
+   animation : fadeForRemoveComment .6s linear ;
+}
+@keyframes fadeForRemoveComment
+{
+    from {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    to
+    {
+        opacity: 0;
+        transform: translateY(120%);
+    }
+} */
+@keyframes closeFadeForEditComment
+{
+    from 
+    {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    to
+    {
+        opacity: 0;
+        transform: translateX(125%);
+    }
+}
+@keyframes fadeForEditComment {
+    from 
+    {
+        transform: translateX(125%);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.editContent>button:first-child
+{
+    background: #ff9100;
+    color: white;
+    width: 80px;
+    height: 25px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.editContent>button:first-child:disabled
+{
+    background-color: #666;
+}
+.editContent>button:last-child:disabled
+{
+    background-color: #666;
+}
+.editContent>button:last-child
+{
+    background: #ec0000;
+    color: white;
+    width: 80px;
+    height: 25px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.name{
+    font-weight: 700;
+    font-size: 18px;
+}
+/* .date{
+
+} */
+.date>span{
+    font-size: 13px;
+    color: #7b7b7b;
+}
+.contentOfUser{
+    padding: 15px 0px;
+    max-width: 93%;
+    line-height: 25px;
+    letter-spacing: .3px;
+}
+/* .action
+{
+
+} */
+
+.action>i:first-child
+{
+    color: #a8a8a8;
+    margin-right: 9px;
+    font-size: 22px;
+    cursor: pointer;
+}
+#modifier
+{
+    margin-left: 20px;
+    font-size: 22px;
+    margin-right: 10px;
+    color: #a8a8a8;
+    cursor: pointer;
+}
+/* .action>span{
+
+} */
+.postComment{
+    width: 50%;
+}
+.postComment__title
+{
+    font-size: 21px;
+    padding: 20px 30px;
+}
+.postComment__input
+{
+    resize: none;
+    margin: 0px 30px;
+    display: block;
+    width: 80%;
+    text-indent: 6px;
+    height: 100px;
+    border: 1px solid #c9c9c9;
+    font-family: inherit;
+    font-size: 14px;
+    border-radius: 7px;
+}
+.postComment>form>button{
+    margin: 20px 30px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #b6b6b6;
+    background: none;
+    border-radius: 13px;
+    outline: none;
+    cursor: pointer;
+}
+.postComment>form>button:hover
+{
+    background-color: #0090ea;
+    color:white;
+}
+/*Similar Product______________________________*/
+.similarProduct{
+    margin-top: 30px;
+}
+.similarProduct__title
+{
+    font-size: 20px;
+    padding: 20px 0px;
+    font-weight: 600;
+    border-bottom: 1px solid #cbcbcb;
+}
+.similarProduct__box
+{
+    margin: 20px 0px;
+    display: flex;
+}
+/*Loader________________________________*/
+.box__loader
+{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    z-index: 4;
+    background: white;
+}
+#loader {
+    bottom: 0;
+    height: 115px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    /* padding-bottom: 12%; */
+}
+
+#fa-spinner--modifier{
+    animation-name: fade2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    color: #101010;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.panination>button
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b6b6b6;
+    background: none;
+    margin: 10px 5px;
+    color: #666;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.panination>button:hover
+{
+    background-color: #bdbdbd;
+    color: white;
+}
+
+/*Loader for homePage*/
+.animationLoader {
+    animation:closeLoaderForHome .6s linear ;
+}
+.boxLoaderForHome 
+{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 8;
+}
+.boxLoaderForComment
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    min-height: 280px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    z-index: 1;
+    border: 1px solid #d8d8d8;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    padding-top: 5%;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid #f05123;
+    border-color: #f05123 transparent #f05123 transparent;
+    animation: lds-dual-ring .7s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes closeLoaderForHome 
+  {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+  }
+/*End loader _______*/
+.renderRemoveComment
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: black;
+    transition: .4s;
+    height: 0px;
+    overflow: hidden;
+}
+.renderRemoveComment>p
+{
+    color: #c9c9c9;
+    text-align: center;
+    margin: 10px 0px;
+}
+.renderRemoveComment>div>button
+{
+    width: 100px;
+    height: 30px;
+    margin: 0px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.renderRemoveComment>div>button:first-child
+{
+    background: #4CAF50;
+    color: #e0e0e0;
+}
+.renderRemoveComment>div>button:last-child
+{
+    background: #cc0000;
+    color: #e0e0e0;
+}
+.renderRemoveComment>div{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.renderRemoveComment>div>button:hover
+{
+    color: white;
+}
+.loaderForCommentUser
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000cf;
+    z-index: 1;
+    display: none;
+}
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  .fadeForCommentUser
+  {
+      animation: fadeForCommentUser .5s linear;
+  }
+  @keyframes fadeForCommentUser
+  {
+      from{
+          opacity: 1;
+      }
+      to
+      {
+          opacity: 0;
+      }
+  }
+  

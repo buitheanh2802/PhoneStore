@@ -1,0 +1,64 @@
+/*Start footer______________________________*/
+.footer{
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__list{
+    width: 25%;
+    padding: 25px;
+    margin-top: 57px;
+    /* margin-left: 20px; */
+    padding-left: 25px;
+}
+.footer__list ul {
+    padding: 0;
+    margin: 0;
+}
+.footer__list li{
+    color: white;
+    list-style: none;
+    padding: 20px 0px;
+}
+.footer__description{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 25px 72px;
+}
+.footer__description img{
+    width: 245px;
+}
+.footer__description p{
+    color: white;
+    width: 345px;
+    line-height: 30px;
+    letter-spacing: .5px;
+}
+.footer__login{
+    width: 25%;
+    padding-right: 45px;
+    padding-top: 72px;
+}
+.footer__login p {
+    color: white;
+    line-height: 32px;
+}
+.footer__login input{
+    width: 245px;
+    height: 40px;
+    text-indent: 13px;
+    border-radius: 33px;
+    border: none;
+}
+.footer__login button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    background: #a800a8;
+    cursor: pointer;
+}

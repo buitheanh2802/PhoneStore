@@ -1,0 +1,250 @@
+.box{
+    display: flex;
+    min-height: 680px;
+    justify-content: center;
+}
+.login{
+    padding: 65px;
+    margin: auto;
+    /* margin-top: 10px; */
+    border-radius: 20px;
+    position: relative;
+    /* margin-bottom: 20px; */
+    border: 1px solid #e5e5e5;
+    padding-bottom: 0;
+    height: 500px;
+    box-shadow: 0px 0px 10px #00000030;
+}
+.title{
+    font-size: 18px;
+    color: black;
+}
+.input{
+    width: 400px;
+    height: 50px;
+    text-indent: 1px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    transition: .1s;
+    background: none;
+    border-bottom: 1px solid #6b6b6b;
+    color: black;
+}
+.input:focus{
+    border-bottom: 2px solid green;
+}
+.helper{
+    text-align: center;
+    margin-top: 45px;
+    color: black;
+}
+.helper>a
+{
+    color: #5a00ff;
+}
+.btn__submit-login
+{
+    width: 200px;
+    /* margin-top: 20px; */
+    height: 44px;
+    border: none;
+    border-radius: 25px;
+    margin: 20px 0px;
+    outline: none;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    transition: .6s;
+}
+.btn__submit-login:hover{
+    background-color:black;
+    color:white
+}
+.loginRunning{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #000000b5;
+    border-radius: 20px;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+#modifier--login
+{
+    margin-top: 41%;
+    color: white;
+    font-size: 27px;
+}
+.user__info{
+    display: flex;
+}
+.info{
+    color: white;
+    line-height: 27px;
+    margin-top: 10px;
+}
+.info>p:first-child{
+  margin: 0;
+}
+.info>p:last-child{
+    margin: 0;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+.listForUser{
+    position: relative;
+}
+.listForUser>i{
+    color: white;
+    font-size: 34px;
+    line-height: 55px;
+    height: 100%;
+    margin: 0px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.listForUser>label
+{
+    color: white;
+    font-size: 34px;
+    line-height: 55px;
+    height: 100%;
+    margin: 0px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.listForUser>i::after
+{
+    content: "";
+    position: absolute;
+    width: 138px;
+    height: 77px;
+    /* bottom: -13px; */
+    left: -68px;
+    top: 48px;
+}
+.listForUser>i:hover
+{
+    color: orangered;
+}
+.cart> i{
+    font-size: 29px;
+    left: white;
+    color: white;
+    line-height: 75px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.bell{
+    color: white;
+    font-size: 20px;
+    margin: 0px 20px;
+    line-height: 72px;
+    cursor: pointer;
+}
+.select{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 3;
+    background: white;
+    min-width: 327px;
+    right: 0;
+    min-height: 51px;
+    top: 75px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: .4s;
+    border-radius: 6px;
+    background: linear-gradient(to right, white, #390000b8);
+}
+.select-item{
+    color: black;
+    list-style: none;
+    padding: 16px 0px;
+    text-indent: 10px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.select-item:hover{
+    transform: translateX(10px);
+    color: #c33500;
+}
+.select-item>a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.select-item>a:hover{
+    color: #c33500;
+}
+.select-item>i{
+    padding-right: 10px;
+}
+#toggleOption:checked + .select
+{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.loaderForLogin
+{
+    position: fixed;
+    background: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1;
+    animation: fadeForLogin .6s linear;
+    flex-direction: column;
+}
+.loaderForLogin>div:last-child
+{
+    text-align: center;
+    position: fixed;
+    top: 55%;
+    width: 100%;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+@keyframes fadeForLogin 
+{
+    from
+    {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

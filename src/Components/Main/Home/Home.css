@@ -1,0 +1,185 @@
+/* .home{
+
+}
+*/
+.banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+} 
+.dotsForBanner
+{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.dotsForBanner > .dot
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    margin: 5px 6px;
+    cursor: pointer;
+    transition: .6s;
+}
+.banner:hover > .derectional__box
+{
+  display: flex;
+}
+.container__banner-content
+{
+    position: absolute;
+    z-index: 1;
+    color: #e6e6e6;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5.5%;
+}
+.container__banner-content>div
+{
+    line-height: 47px;
+}
+.container__banner-content>div:nth-child(1)
+{
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: .6px;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: .9s;
+}
+.container__banner-content>div:nth-child(1)>i
+{
+    margin-right: 10px;
+}
+.container__banner-content>div:nth-child(2)
+{
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 2%;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: .9s;
+}
+.container__banner-content>div:nth-child(3)
+{
+    font-style: italic;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: .9s;
+}
+.container__banner-content>div:nth-child(4)
+{
+    height: 47px;
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: .9s;
+}
+.container__banner-content>div:nth-child(4)>a
+{
+    display: block;
+    width: 121px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 14px;
+    margin-top: 12px;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+}
+.container__banner-box
+{
+    overflow: hidden;
+    transition: .6s;
+    height: 650px;
+    position: relative;
+    background: black;
+}
+.animate__animated.animate__rotate {
+    --animate-duration: 2s;
+  }
+.fadeOut {
+   animation: fadeOut .8s linear;
+}
+.fadeIn {
+    animation: fadeIn .8s linear;
+ }
+@keyframes fadeOut
+{
+    from {
+        margin-left: 0%;
+        opacity: 1;
+    }
+    to
+    {
+        margin-left: -100%;
+        opacity: .6;
+    }
+}
+@keyframes fadeIn
+{
+    from {
+        margin-left: 100%;
+        opacity: 1;
+    }
+    to{
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+.container__banner
+{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   opacity: 0;
+}
+.banner__img
+{
+    width: 100%;
+    height: 100%;
+}
+.derectional__box
+{
+    position: absolute;
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    top: 44%;
+    color: #2a2a2ac4;
+}
+.fa-chevron-right
+{
+    text-align: right;
+    font-size: 45px;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: .3s;
+}
+.fa-chevron-left
+{
+
+    text-align: left;
+    font-size: 45px;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: .3s;
+}
+.derectional__box>i:hover{
+    color: white;
+}
+@keyframes fade {
+    from {
+        opacity: .8;
+        transform: scale(1.2);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
